@@ -1,0 +1,25 @@
+{
+  "name": "protractor-nosync",
+  "version": "1.0.0",
+  "description": "A wrapper to execute arbitrary methods under protractor without browser synchronization.",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha -- --ui bdd -R spec -t 5000"
+  },
+  "keywords": [
+    "protractor"
+  ],
+  "author": {
+    "name": "John J. Andrichak IV",
+    "email": "j.andrichak@rackspace.com"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/jj4th/protractor-nosync",
+  "devDependencies": {
+    "chai": "^2.2.0",
+    "istanbul": "^0.3.13",
+    "mocha": "^2.2.1",
+    "sinon": "^1.14.1",
+    "sinon-chai": "^2.7.0"
+  }
+}
