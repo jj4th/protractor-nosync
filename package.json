@@ -1,6 +1,6 @@
 {
   "name": "protractor-nosync",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A wrapper to execute arbitrary methods under protractor without browser synchronization.",
   "main": "lib/index.js",
   "scripts": {
