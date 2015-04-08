@@ -1,6 +1,6 @@
 # protractor-nosync
 
-It is the nature of Protractor that for testing sufficiently complex apps, or apps long running resource fetches, it is sometimes necessary to disable browser synchronization around certain tests.  This project provides a simple wrapper to execute arbitrary methods without browser synchronization.
+It is the nature of Protractor that for testing sufficiently complex apps, or apps with long running resource fetches, it is sometimes necessary to disable browser synchronization around certain tests.  This project provides a simple wrapper to execute arbitrary methods without browser synchronization.
 
 This wrapper must be initialized with the Protractor browser object, since it must change configuration of the active protractor browser instance by setting and resetting `browser.ignoreSynchronization`.
 
@@ -63,11 +63,6 @@ nosync(function () {
 0. Commit your changes: `git commit -am 'Add some feature'`
 0. Push to the branch: `git push origin my-new-feature`
 0. Submit a pull request :D
-
-## History
-
-04-06-2015
-v1.0.0: Initial commit
 
 ## Credits
 
