@@ -1,8 +1,10 @@
 var wrap = function (browser, method) {
     return function () {
+	var result;
         browser.ignoreSynchronization = true;
-        method.apply(method, arguments);
+        result = method.apply(method, arguments);
         browser.ignoreSynchronization = false;
+	return result;
     };
 }
 
@@ -10,7 +12,7 @@ module.exports = exports = {
     initialize: function (browser, obj) {
         // create the default wrapper
         var noSync = function(method) {
-            wrap(browser, method)();
+            return wrap(browser, method)();
         }
 
         // Create the chained functions
